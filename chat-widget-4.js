@@ -16,8 +16,8 @@
         .chat-assist-widget {
             --chat-color-primary: var(--chat-widget-primary, #00aeef);
             --chat-color-secondary: var(--chat-widget-secondary, ##009FEF);
-            --chat-color-tertiary: var(--chat-widget-tertiary, #047857);
-            --chat-color-light: var(--chat-widget-light, #d1fae5);
+            --chat-color-tertiary: var(--chat-widget-tertiary, #00aeef);
+            --chat-color-light: var(--chat-widget-light, #00aeef);
             --chat-color-surface: var(--chat-widget-surface, #ffffff);
             --chat-color-text: var(--chat-widget-text, #1f2937);
             --chat-color-text-light: var(--chat-widget-text-light, #6b7280);
@@ -539,8 +539,8 @@
             route: ''
         },
         style: {
-            primaryColor: '#10b981', // Green
-            secondaryColor: '#059669', // Darker green
+            primaryColor: '#00aeef', // Blue
+            secondaryColor: '#009FEF', // Darker Blue
             position: 'right',
             backgroundColor: '#ffffff',
             fontColor: '#1f2937'
@@ -557,8 +557,8 @@
                 ...defaultSettings.style, 
                 ...window.ChatWidgetConfig.style,
                 // Force green colors if user provided purple
-                primaryColor: window.ChatWidgetConfig.style?.primaryColor === '#854fff' ? '#10b981' : (window.ChatWidgetConfig.style?.primaryColor || '#10b981'),
-                secondaryColor: window.ChatWidgetConfig.style?.secondaryColor === '#6b3fd4' ? '#059669' : (window.ChatWidgetConfig.style?.secondaryColor || '#059669')
+                primaryColor: window.ChatWidgetConfig.style?.primaryColor === '#854fff' ? '#00aeef' : (window.ChatWidgetConfig.style?.primaryColor || '#00aeef'),
+                secondaryColor: window.ChatWidgetConfig.style?.secondaryColor === '#6b3fd4' ? '#059669' : (window.ChatWidgetConfig.style?.secondaryColor || '#009FEF')
             },
             suggestedQuestions: window.ChatWidgetConfig.suggestedQuestions || defaultSettings.suggestedQuestions
         } : defaultSettings;
