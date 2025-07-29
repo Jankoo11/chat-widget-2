@@ -558,7 +558,7 @@
                 ...window.ChatWidgetConfig.style,
                 // Force green colors if user provided purple
                 primaryColor: window.ChatWidgetConfig.style?.primaryColor === '#854fff' ? '#00aeef' : (window.ChatWidgetConfig.style?.primaryColor || '#00aeef'),
-                secondaryColor: window.ChatWidgetConfig.style?.secondaryColor === '#6b3fd4' ? '#059669' : (window.ChatWidgetConfig.style?.secondaryColor || '#009FEF')
+                secondaryColor: window.ChatWidgetConfig.style?.secondaryColor === '#009FEF' ? '#009FEF' : (window.ChatWidgetConfig.style?.secondaryColor || '#009FEF')
             },
             suggestedQuestions: window.ChatWidgetConfig.suggestedQuestions || defaultSettings.suggestedQuestions
         } : defaultSettings;
